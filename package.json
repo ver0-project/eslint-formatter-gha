@@ -1,0 +1,57 @@
+{
+	"name": "@ver0/eslint-formatter-gha",
+	"description": "ESLint formatter for Github Actions",
+	"version": "1.0.0",
+	"keywords": [
+		"eslint",
+		"formatter",
+		"eslint-formatter",
+		"guthub-actions"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ver0-project/eslint-formatter-gha"
+	},
+	"bugs": {
+		"url": "https://github.com/ver0-project/eslint-formatter-gha/issues"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"license": "MIT",
+	"author": "Anton Zinovyev <xog3@yandex.ru>",
+	"engines": {
+		"node": ">=18"
+	},
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"postinstall": "husky",
+		"build": "yarn build:clean && yarn tsc -p tsconfig.build.json",
+		"build:clean": "rimraf dist",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix"
+	},
+	"packageManager": "yarn@4.6.0",
+	"dependencies": {
+		"@actions/core": "^1.11.1"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.7.1",
+		"@commitlint/config-conventional": "^19.7.1",
+		"@types/eslint": "^9.6.1",
+		"@types/node": "^22.13.1",
+		"@ver0/eslint-config": "^1.1.1",
+		"eslint": "^9.20.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.4.3",
+		"pinst": "^3.0.0",
+		"rimraf": "^6.0.1",
+		"semantic-release": "^24.2.1",
+		"typescript": "^5.7.3"
+	}
+}
