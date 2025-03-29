@@ -36,7 +36,7 @@
 		"lint": "eslint",
 		"lint:fix": "eslint --fix"
 	},
-	"packageManager": "yarn@4.6.0",
+	"packageManager": "yarn@4.8.0",
 	"dependencies": {
 		"@actions/core": "^1.11.1"
 	},
