@@ -1,6 +1,6 @@
 ---
-description: 'Overview of the ESLint formatter for GitHub Actions project'
-globs: '**/*'
+description: 'Overview of the project'
+globs:
 alwaysApply: false
 ---
 
@@ -41,6 +41,11 @@ eslint -f @ver0/gha
 3. Commit message format enforced with commitlint
 4. CI/CD pipelines configured in GitHub Actions
 5. Semantic versioning managed with semantic-release
+6. NPM scripts
+   - `build` - to build the distributable package.
+   - `build:clean` - to build with cleanup of output folder.
+   - `lint` - to lint the code.
+   - `lint:fix` - to lint applying all possible automatic fixes.
 
 ## Dependencies
 
