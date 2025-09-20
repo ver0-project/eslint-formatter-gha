@@ -7,8 +7,6 @@ const cfg = [
 	{ignores: ['dist/**/*']},
 	...buildConfig({
 		globals: 'node',
-		react: true,
-		vitest: true,
 	}),
 	{
 		files: ['README.md'],
