@@ -41,7 +41,7 @@
 	},
 	"devDependencies": {
 		"@types/eslint": "^9.6.1",
-		"@types/node": "^24.10.1",
+		"@types/node": "^24.10.2",
 		"@ver0/eslint-config": "^1.3.6",
 		"eslint": "^9.39.1",
 		"rimraf": "^6.1.2",
